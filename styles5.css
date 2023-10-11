@@ -6,18 +6,33 @@
 }
 
 #header {
-    background-color: lightgreen;
+    background-color: darkgoldenrod;
+    text-align: center;
+    padding: 20px;
 }
 
 #sidebar {
+    width: 25%;
+    float: left;
+    padding: 10px;
     background-color: black;
     color: white;
 }
 
 #content {
-    background-color: white;
+    width: 75%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 20px;
 }
 
 #footer {
-    background-color: darkgrey;
+    clear: both;
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
