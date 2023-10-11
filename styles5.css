@@ -1,0 +1,15 @@
+#header {
+    background-color: lightgreen;
+}
+
+#sidebar {
+    background-color: black;
+}
+
+#content {
+    background-color: white;
+}
+
+#footer {
+    background-color: darkgrey;
+}
