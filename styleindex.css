@@ -33,6 +33,7 @@ nav ul li:hover {
 #main-container {
     margin-top: 25px;
     display: flex;
+    gap: 20px;
     justify-content: space-around;
 }
 
@@ -40,8 +41,14 @@ nav ul li:hover {
     width: 30%;
 }
 
+#main img {
+    width: 100%;
+}
+
 #main-container div img {
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -50,3 +57,19 @@ footer {
     padding: 20px;
     border-top: 1px solid #343434;
 } 
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-container ul {
+    list-style-type: none;
+}
+
+#copyright {
+    border-top: 1px solid #343434;
+    text-align: center;
+    padding: 20px;
+}
+
