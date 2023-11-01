@@ -11,6 +11,14 @@ header {
     padding: 40px;
 }
 
+main {
+    display: flex;
+}
+
+main img {
+    width: 100%;
+}
+
 footer {
     background-color: #565656;
     color: white;
