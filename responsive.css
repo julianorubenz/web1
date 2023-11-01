@@ -8,3 +8,10 @@
 header {
     background-color: #cdcdcd;
 }
+
+footer {
+    background-color: #565656;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
