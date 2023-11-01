@@ -26,6 +26,7 @@ main img {
     }
     header h1 {
         color: lightgreen;
+        background-color: black;
     }
 }
 
