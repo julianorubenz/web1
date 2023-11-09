@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <label for="input1"></label>
+    <input type="text" id="input1">
+
+    <label for="perhitungan"></label>
+    <select id="perhitungan">
+        <option value="penjumlahan">(+)</option>
+        <option value="pengurangan">(-)</option>
+        <option value="perkalian">(*)</option>
+        <option value="pembagian">(/)</option>
+    </select>
+
+    <label for="input2"></label>
+    <input type="text" id="input2">
+
+    <button onclick="hitung()">Hitung</button><br><br>
+
+    <label for="hasil">Hasil:</label>
+    <input type="text" id="hasil">
+    
+    <script>
+        function hitung() {
+            var input1 = parseFloat(document.getElementById('input1').value);
+            var input2 = parseFloat(document.getElementById('input2').value);
+            var perhitungan = document.getElementById('perhitungan').value;
+            var result;
+
+            switch(perhitungan) {
+                case 'penjumlahan':
+                    result = input1 + input2;
+                    break;
+                case 'pengurangan':
+                    result = input1 - input2;
+                    break;
+                case 'perkalian':
+                    result = input1 * input2;
+                    break;
+                case 'pembagian':
+                    if (input2 !== 0) {
+                        result = input1 / input2;
+                    } else {
+                        result = "Tidak bisa dibagi dengan 0!";
+                    }
+                    break;
+            }
+            document.getElementById('hasil').value = result;
+        }
+    </script>
+</body>
+</html>
