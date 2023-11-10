@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn JS 4</title>
 </head>
-<body>
+<body onload="functionOnLoad()">
     <h1>Learn JS 4</h1>
 
-    
+    <button onclick="functionClick()">Click Me!</button>
+
+    <button onmouseover="functionHover()">Hover over Me</button>
+
+    <button onmouseout="functionOut()">Try dis Button!</button>
+
+    <br><br>
+    Name: <input type="text" id="name" onkeydown="functionDown()">
+
+    <script>
+        function functionClick(){
+            alert("U Clicked the Button!");
+        }
+
+        function functionHover(){
+            alert("U Hover over the Button!");
+        }
+
+        function functionOut(){
+            alert("U tried it!");
+        }
+
+        function functionDown(){
+            console.log("U Pressed the key");
+            document.getElementById("name").style.borderColor = "red";
+        }
+
+        function functionOnLoad(){
+            alert("Finished Loading the Page");
+        }
+
+    </script>
 </body>
 </html>
